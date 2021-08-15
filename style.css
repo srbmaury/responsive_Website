@@ -103,7 +103,7 @@
     background: rgba(0, 0, 0, 0.7) url('images/th1.jpg');
     background-size: cover;
     background-blend-mode: darken;
-    max-height:708px;
+    max-height:633px;
 }
 .background2{
     background: rgba(0, 0, 0, 0.7) url('images/back.jpg');
@@ -205,7 +205,7 @@
 }
 #connect{
     margin-top: 70px;
-    min-height:638px;
+    min-height:563px;
 }
 .contacttag{
     margin-left: 35%;
@@ -306,8 +306,9 @@ li{
     margin-top: -10px;
 }
 .fffbody{
-    max-height:708px;
-    height:708px;
+    margin-top:43px;
+    max-height:633px;
+    height:633px;
 }
 html,body{
     overflow-x:hidden;
