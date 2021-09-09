@@ -100,10 +100,10 @@
     padding-left: 30%;
 }
 .background{
-    background: rgba(0, 0, 0, 0.7) url('images/th1.jpg');
     background-size: cover;
     background-blend-mode: darken;
-    max-height:633px;
+    /* max-height:633px;                                        // */
+    background-image: linear-gradient(rgb(23,23,200),rgb(87, 78, 168),rgb(219, 50, 50),rgb(219, 219, 54));
 }
 .background2{
     background: rgba(0, 0, 0, 0.7) url('images/back.jpg');
@@ -169,7 +169,7 @@
     margin-bottom: 0px;
 }
 .section{
-    height:500px;
+    height:100vh;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -205,7 +205,10 @@
 }
 #connect{
     margin-top: 70px;
-    min-height:563px;
+    min-height:100vh;
+}
+.grad{
+    background: linear-gradient(rgb(23,23,200),rgb(87, 78, 168),rgb(219, 50, 50),rgb(219, 219, 54));
 }
 .contacttag{
     margin-left: 35%;
@@ -224,6 +227,7 @@
     border-color: rgb(0, 0, 0);
     height: 200px;
     border-radius: 10px;
+    box-shadow: 3px 5px #222;
 }
 .contact{
     background-color: rgb(217, 241, 241);
@@ -307,8 +311,7 @@ li{
 }
 .fffbody{
     margin-top:43px;
-    max-height:633px;
-    height:633px;
+    height:100vh;
 }
 html,body{
     overflow-x:hidden;
@@ -382,6 +385,7 @@ html,body{
     .contactsection{   
         border: 0em;
         background: none;
+        box-shadow: none;
     }
     .contacttag{
         margin-left: 50px;
@@ -395,8 +399,9 @@ html,body{
     .background{
         min-height: 800px;
     }
-    #connect{   /**/
+    #connect{
         height: max-content;
+        padding-bottom: 40px;
     }
     .firstHalf{
         margin-top: 170px;
@@ -423,6 +428,10 @@ html,body{
         zoom:34%;
         margin-bottom:-17px;
     }
+    #details{
+        margin-top:-30px;
+        margin-bottom: -65px;
+    }
 }
 @media only screen and (max-width: 782px){
     .box-main{
@@ -438,6 +447,19 @@ html,body{
     }
     .container{
         margin-top: 120px;
+    }
+    #connect{
+        margin-top: 50px;
+        margin-bottom: 0px;
+        height:auto;
+        min-height: 100%;
+    }
+    #connect .section{
+        margin-bottom: 2px;
+    }
+    .background{
+        height:auto;
+        min-height: 100%;
     }
 }
 @media only screen and (max-width: 648px){
@@ -742,14 +764,19 @@ form .button input:hover{
 } 
 /*************DARK MODE***************/
 .dark1{
-    background:black;
+    background:#222;
+    background-image:#222;
 }
 .dark2{
-    background:black;
+    background:#222;
     color: white;
 }
 .sticky{
     position: fixed;
     top:0;
     width:100%;
+}
+.formborder{
+    border:3px solid black;
+    box-shadow: 3px 5px black;
 }
