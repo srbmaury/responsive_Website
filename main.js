@@ -101,33 +101,38 @@ else{
 }
 name.innerHTML="";
 })
-var faltu1 = document.getElementById('faltu1');
+var mainPageId = document.getElementById('mainPageId');
 var connect = document.getElementById('connect');
-var faltu2 = document.getElementById('faltu2');
+var contactId = document.getElementById('contactId');
 var details = document.getElementById('details');
-var faltu3 = document.getElementById('faltu3');
-
+var formBodyId = document.getElementById('formBodyId');
+var container = document.getElementById('container');
 var darkLight = document.getElementById("darkbutton");
 function darkmode(){
   
-  if(faltu1.className == "background firstSection") {
-    faltu1.className+=" dark1";
-    connect.className+=" dark1";
-    faltu2.className+=" dark1";
+  if(mainPageId.className == "background firstSection") {
+    mainPageId.className+=" dark1";
+    contactId.className+=" dark1 formborder";
     details.className+=" dark2";
-    faltu3.className+=" dark1";
+    formBodyId.className+=" dark1";
     darkLight.innerHTML="Light";
+    container.className +=" formborder dark2";
     darkLight.src="images/sun-6-64.png";
   }
   else {
-    faltu1.className = "background firstSection";
-    connect.className = "";
-    faltu2.className = "section contactsection";
+    mainPageId.className = "background firstSection";
+    contactId.className = "section contactsection";
     details.className = "";
-    faltu3.className = "fffbody";
+    formBodyId.className = "fffbody";
     darkLight.innerHTML="Dark";
     darkLight.src="images/moon-4-64.png";
-
+    container.className="container";
+  }
+  if(connect.className=="grad"){
+    connect.className = "dark1";
+  }
+  else{
+    connect.className="grad";
   }
 }
 
