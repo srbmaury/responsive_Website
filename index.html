@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <title>Responsive Website</title>
+    </head>
+
+    <body onload='realtimeClock()'>
+    
+        <!------------------------NAVIGATION BAR---------------------------------->
+        <nav class="navbar background2 sticky" id="myTopnav">
+            <ul class="nav-list v-class-resp">
+
+                <!--TITLE OF MAIN PAGE-->
+                <div class="logo" title="Web Development"><img src="images/th.jpg" alt="logo"></div>
+
+                <!--------------------------------TABS---------------------------------->
+                <div class="mobo" id="ccc">
+                    <li><a href="#main" id="mobileview0" onclick='myFunction1();'><img src="images/home-7-64.png" alt="home">&emsp;&emsp;</a><a     href="#main" onclick='myFunction1();' id="mobileview1" title="Home"> Home</a></li>
+                    <li><a href="#connect" onclick='myFunction2();'><img src="images/contacts-2-64.png" alt="connect">&emsp;&emsp;</a><a    href="#connect" onclick='myFunction2();' id="mobileview2" title="Connect">Connect</a></li> 
+                    <li><a href="#details" onclick='myFunction3();'><img src="images/view-details-64.png" alt="details">&emsp;&emsp;</a><a  href="#details" onclick='myFunction3();' id="mobileview3" title="Details">Details</a></li>
+                    <li><a href="#form" onclick='myFunction4();'><img src="images/info-3-64.png" alt="register">&emsp;&emsp;</a><a href="#form"     onclick='myFunction4();'id="mobileview4" title="Register">Register</a>
+                </div>
+
+                <!--------------------------------------------DARK MODE---------------------------------->
+                <a href="#" onclick='darkmode();'><img src="images/moon-4-64.png" alt="dark" id="darkbutton" class="responsiveDay" style="zoom:30%; "></a>
+
+            </ul>
+
+            <!-----------------------------------GOOGLE SEARCH---------------------------------->
+            <form class="rightNav v-class-resp" action="https://www.google.com/search" method="get" id="labnol" target="_new">
+                <ul class="navList">
+                    <input type="text" name="q" id="search" placeholder="Search"  title="Search">
+                    <img onclick ="startDictation()" src="images/microphone-8-64.png" alt="search" style="zoom:34%;margin-bottom:-17px; ">
+                    <input type="submit" Value="Search" title="Click to search">
+                </ul>
+            </form>
+
+            <!----------------------------------REAL TIME CLOCK------------------------------------>
+            <div class="ghadi">&emsp;
+                <p id="clock" title="IST"></p>
+            </div>
+
+            <!----------------------------HAMBURGER BARS IN PHONE-------------------------------->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="max-width:10px; float:left;">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!----------------------------------HOME ICON IN PHONE---------------------------------->
+            <a href="#main" onclick='myFunction1();'><img src="images/home-7-64.png" alt="home" id="ghar"></a>
+        </nav>
+    
+    
+        <!--------------------------------  PAGE - 1   ------------------------------------------------------------>
+        <div id="main"> 
+            <section class="background firstSection" id="mainPageId">
+                <div class="box-main">
+                    <div class="firstHalf">
+
+                        <!-----------------------------TITLE OF MAIN PAGE------------------------------>
+                        <p class="text-big" title="Web Development">Web Development</p>
+
+                        <!----------------------------------ABOUT ME-------------------------------------->
+                        <p class="text-small">Hi There, I’m Saurabh and I am a Front-End Web Developer. It has been 1 month, I’m working as web     developer and this is the my first website.
+                        <br><br>I am doing my graduation in Electronics Engineering.
+                        <br>My Skill Set : HTML5, CSS3, JavaScript.
+                        <br>I'm also learning Back-End Development and looking forward to be a Full Stack Web Developer.</p>
+
+                        <!---------------------------------------MY IMAGE------------------------------------>
+                        <div class="secondHalf">
+                            <img src="images/img4.jpg" alt="web Development" title="Saurabh Maurya">
+                        </div>
+
+                        <!-----------------------------------------YOUTUBE-------------------------------->
+                        <p class="text-big" title="Saurabh Maurya">Visit my youtube channel</p>
+                        <div class="buttons">
+                            <a href="https://youtu.be/-fYBaekyCes" target="_new">
+                            <button class="btn" title="Subscribe">Subscribe</button> </a>
+                            <a href="https://youtu.be/VkrpEnw0hdI" target="_new">
+                            <button class="btn2" title="Watch Video">Watch Video</button> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        
+    
+        
+        <!--------------------------------  PAGE - 2   ------------------------------------------------------------>
+        <div id="connect" class="grad">
+
+            <!----------------------------------------TITLE OF PAGE 2------------------------------------>
+            <section class="contacttag">
+                    <p class="sectionTag text-big2">Connect me through</p>
+            </section>
+    
+            <!-------------------------------------MY HANDLES---------------------------------------->
+            <section class="section contactsection" id="contactId">
+                <a href="https://www.instagram.com/srbmaury/" target="_new">
+                <div class="thumbnail2"><img src="images/1.jpg" alt="image not loaded" class="imgFluid2" title="instagram"></div> </a>
+                <a href="https://m.facebook.com/profile.php?id=100057795465187" target="_new">
+                <div class="thumbnail2"><img src="images/2.jpg" alt="image not loaded" class="imgFluid2" title="facebook"></div> </a>
+                <a href="mailto:saurabh.maurya.ece20@gmail.com">
+                <div class="thumbnail2"><img src="images/3.jpg" alt="image not loaded" class="imgFluid2" title="e-mail"></div> </a>
+                <a href="https://www.linkedin.com/in/saurabh-maurya-39b04b205" target="_new">
+                <div class="thumbnail2"><img src="images/4.jpg" alt="image not loaded" class="imgFluid2" title="linkedin"></div> </a>
+                <a href="https://mobile.twitter.com/SrbMaury" target="_new">
+                <div class="thumbnail2"><img src="images/5.jpg" alt="image not loaded" class="imgFluid2" title="twitter"></div> </a>
+                <a href="https://github.com/srbmaury" target="_new">
+                <div class="thumbnail2"><img src="images/6.jpg" alt="image not loaded" class="imgFluid2" title="github"></div> </a>
+                </a>
+            </section>
+
+        </div>
+    
+        <!--------------------------------  PAGE - 3   ------------------------------------------------------------>
+        <div id="details" class="">
+
+            <!----------------------PARA-1---------------------->
+            <section class="section">
+                <div class="paras">
+                <p class="sectionTag text-big">Want to make career in Web development. Why should you?</p>
+                <p class="sectionSubTag text-small">Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network details. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding.[2] Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.</p> </div>
+                <div class="thumbnail"><img src="https://source.unsplash.com/900x900/?html,css" alt="image not loaded" class="imgFluid"></div>
+            </section>
+            <hr>
+
+            <!-----------------------PARA-2------------------------>
+            <section class="section section-left">
+                <div class="paras">
+                <p class="sectionTag text-big">Web development in this era</p>
+                <p class="sectionSubTag text-small">An ever-growing set of tools and technologies have helped developers build more dynamic and interactive Web sites. Further, Web developers now help to deliver applications as Web details which were traditionally only available as applications on a desk-based computer. This has allowed for many opportunities to decentralize information and media distribution. Examples can be seen with the rise of cloud details such as Adobe Creative Cloud, Dropbox and Google Drive. These Web details allow users to interact with applications from many locations, instead of being tied to a specific workstation for their application environment.</p> </div>
+                <div class="thumbnail"><img src="https://source.unsplash.com/900x900/?coding,webdevelopment" alt="image not loaded" class="imgFluid"></div>
+            </section>
+            <hr>
+
+            <!-----------------PARA-3---------------------->
+            <section class="section">
+                <div class="paras">
+                <p class="sectionTag text-big">Security  Considerations</p>
+                <p class="sectionSubTag text-small">Web development takes into account many security considerations, such as data entry error checking through forms, filtering output, and encryption. Malicious practices such as SQL injection can be executed by users with ill intent yet with only primitive knowledge of Web development as a whole. Scripts can be used to exploit Web sites by granting unauthorized access to malicious users that try to collect information such as email addresses, passwords and protected content like credit card numbers. Some of this is dependent on the server environment on which the scripting language, such as ASP, JSP, PHP, Python, Perl or Ruby is running, and therefore is not necessarily down to the Web developer themselves to maintain. However, stringent testing of Web applications before public release is encouraged to prevent such exploits from occurring. If some contact form is provided on a Web site it should include a captcha field in it which prevents computer programs from automatically filling forms and also mail spamming.</p> </div>
+                <div class="thumbnail"><img src="https://source.unsplash.com/900x900/?javascript,python3" alt="image not loaded" class="imgFluid"></div>
+            </section>
+
+        </div>
+    
+        <!--------------------------------  PAGE - 4   ------------------------------------------------------------>
+    
+        <div id="form">
+            <div class="fffbody" id="formBodyId">
+                <div class="container" id="container">
+
+                    <!----------------------------FORM TITLE---------------------------------------->
+                    <div class="title" title="Registration">Registration</div>
+                        <form action="#" id="form">
+                            <div class="user-details">
+
+                                <div class="input-box">
+                                    <label for="name">
+                                        <span class="details">Full Name:</span>
+                                    </label>
+                                    <input type="text"  placeholder="Enter your name" class="form-control" id="name" name="name" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="username">
+                                        <span class="details">Username:</span>
+                                    </label>
+                                    <input type="text" placeholder="Enter your username" class="form-control" id="username" name="username" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="email">
+                                        <span class="details">Email:</span>
+                                    </label>
+                                    <input type="email" placeholder="abc@xyz.com" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="number">
+                                        <span class="details">Phone number:</span>
+                                    </label>
+                                    <input type="tel" id="number" name ="phone" placeholder="Enter your 10-digit mobile number" class="form-control" maxlength="10" minlength="10" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="password">
+                                        <span class="details">Password:</span>
+                                    </label>
+                                    <input type="password" name = "password" class="form-control" id="password" name="password" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="apassword">
+                                        <span class="details">Confirm Password:</span>
+                                    </label>
+                                    <input type="password" name = "apassword" class="form-control" id="apassword" name="apassword" required>
+                                </div>
+
+                            </div>
+                            <div class="gender-details" id="gender">
+                                <input type="radio" name="gender" id="dot-1" class="form-control" name="m">
+                                <input type="radio" name="gender" id="dot-2" class="form-control" name="f">
+                                <input type="radio" name="gender" id="dot-3" class="form-control" name="o">
+
+                                <label for="dot-1">
+                                    <span class="gender-title">Gender</span>
+                                </label>
+
+                                <div class="category">
+
+                                    <label for="dot-1">
+                                        <span class="dot one"></span>
+                                        <span class="gender">Male</span>
+                                    </label>
+
+                                    <label for="dot-2">
+                                        <span class="dot two"></span>
+                                        <span class="gender">Female</span>
+                                    </label>
+
+                                    <label for="dot-3">
+                                        <span class="dot three"></span>
+                                        <span class="gender">Other</span>
+                                    </label>
+
+                                </div>
+                            </div> 
+
+                            <div class="button" title="Click to submit">
+                                <input type="submit" value="Register">
+                            </div>
+
+                        </form>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    
+        <!--------------------------------FOOTER-------------------------------------->
+        <footer>
+            <p class="text-footer" style="float:bottom;">
+                Copyright &copy; 2021 - www.srbmaury.com - All rights reserved
+            </p>
+        </footer>
+    
+        <script src="main.js"></script> 
+    </body>
+</html>
